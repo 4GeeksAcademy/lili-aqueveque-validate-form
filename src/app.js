@@ -62,6 +62,23 @@ document.addEventListener("DOMContentLoaded", function() {
             "Please review the following: " + errors[fieldName];
           break;
         }
+        // Check if input of cardInput is 16 length
+      } else if (input === cardInput) {
+        if (input.value.trim().length !== 16) {
+          input.style.backgroundColor = "rgb(248,215,218,255)"; // same color as light danger
+          hasErrors = true;
+          document.getElementById("alerty").innerHTML =
+            "Please review the following: " + errors[fieldName];
+          break;
+        }
+      } else if (input === cvcInput) {
+        if (input.value.trim().length < 3) {
+          input.style.backgroundColor = "rgb(248,215,218,255)"; // same color as light danger
+          hasErrors = true;
+          document.getElementById("alerty").innerHTML =
+            "Please review the following: " + errors[fieldName];
+          break;
+        }
       } else if (!input.value.trim()) {
         // For other inputs, check if they are empty
         input.style.backgroundColor = "rgb(248,215,218,255)"; // same color as light danger
