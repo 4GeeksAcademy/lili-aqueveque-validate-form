@@ -1,1 +1,43 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
+.card {
+  width: 80%;
+  margin-top: 40px;
+}
+
+.red-alert {
+  margin: 15px;
+  font-weight: 600;
+}
+
+.sub-text {
+  font-weight: light;
+}
+
+.inputAccept {
+  display: block;
+  background-color: grey;
+  background-color: rgb(253, 176, 176);
+  padding: 7px;
+  width: fit-content;
+  border-radius: 8px;
+  margin-top: 12px;
+}
+
+.form-check-input:checked {
+  border-color: white; /* Change the border color*/
+  background-color: grey; /* Change the background color*/
+}
+
+label {
+  font-weight: 500;
+}
+
+i {
+  color: white;
+  font-size: 18px;
+}
+
+.dollar-sign {
+  background-color: white;
+  border: none;
+  font-weight: 700;
+}
